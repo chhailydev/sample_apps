@@ -14,15 +14,15 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // return ChangeNotifierProvider(
-    //   create: (context) => CartModel(),
-    //   child: const MaterialApp(
-    //     debugShowCheckedModeBanner: false,
-    //     home: IntroPage(),
-    //   ),
-    // );
-    return const MaterialApp(
-      home: ChatApp(),
+    return ChangeNotifierProvider(
+      create: (context) => CartModel(),
+      child: const MaterialApp(
+        debugShowCheckedModeBanner: false,
+        home: IntroPage(),
+      ),
     );
+    // return const MaterialApp(
+    //   home: ChatApp(),
+    // );
   }
 }
